@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableConfigurationProperties(UserIncomeProperties.class)
-public class UserIncomeAutoconfiguration {
+@EnableConfigurationProperties(IncomeClientProperties.class)
+public class IncomeClientAutoconfiguration {
     @Bean
-    public UserIncome userIncome(){
-        return new UserIncome();
+    public IncomeClient userIncome(){
+        return new IncomeClient();
     }
 }
